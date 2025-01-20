@@ -43,10 +43,7 @@ CREATE TABLE `commentaire` (
 --
 
 INSERT INTO `commentaire` (`id_commentaire`, `id_user`, `commentaire`) VALUES
-(1, 1, 'WS'),
-(2, 1, 'SALUT TEST depuis unity'),
-(3, 1, 'test3'),
-(13, 1, 'sasa');
+(1, 1, 'Mon premier commentaire');
 
 -- --------------------------------------------------------
 
@@ -65,10 +62,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `login`, `password`) VALUES
-(1, 'WSM', 'scrypt:32768:8:1$DZ8ia8NZV7nbA7bN$763bd81128208c21bb594562124cd1cd09fe76b008aeb449eecaf23a49feba37bf0f519338c4de0524397159d350fc1adf832e81efbed1ec16e530e3bbe136a1'),
-(2, 'WSM2', 'scrypt:32768:8:1$WSoMKmMB398fDOVg$9b79154bba1dc410137ac99f546e10fb70e05e817674e9e695465ecf8d5ac949bac197f3afba4f3f54e7defd6fbbc4fa83a237320d741e5787f10684c3c4097c'),
-(3, 'WSM', 'scrypt:32768:8:1$528MhdXnc9O7JoWz$9a1fa43bbc7b2e3c8b8710ce0a18d914d877fe2624aa505f66a973da3efefc62b5c24e6be28835d025f25542845467af96b388269e6be146baae78312e13251b');
-
+(1, 'WSM', 'scrypt:32768:8:1$DZ8ia8NZV7nbA7bN$763bd81128208c21bb594562124cd1cd09fe76b008aeb449eecaf23a49feba37bf0f519338c4de0524397159d350fc1adf832e81efbed1ec16e530e3bbe136a1');
 --
 -- Index pour les tables déchargées
 --
