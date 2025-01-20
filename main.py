@@ -98,6 +98,11 @@ def add_user():
         login = data['login']
         password = data['password']
 
+        # Vérifier si le login existe déjà
+        existing_user = User.query.filter_by(login=login).first()
+        if existing_user:
+            return jsonify({'error': 'Cet identifiant est déjà utilisé. Veuillez en choisir un autre.'}), 409
+
         # Hasher le mot de passe
         hashed_password = generate_password_hash(password)
 
@@ -113,6 +118,7 @@ def add_user():
         # En cas d'erreur, annuler la transaction
         db.session.rollback()
         return jsonify({'error': str(e)}), 500
+
 
 @app.route('/login', methods=['POST'])
 def login():

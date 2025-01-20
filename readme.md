@@ -3,7 +3,7 @@
 
 ## Fonctionnalités
 
-- **Inscription des utilisateurs** avec mots de passe cryptés. # Pas implémenté sur unity
+- **Inscription des utilisateurs** avec mots de passe cryptés.
 - **Connexion des utilisateurs** pour vérifier leurs identifiants.
 - **Gestion des commentaires** : les utilisateurs peuvent poster des commentaires associés à leurs comptes.
 
