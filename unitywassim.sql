@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS `unitywassim`;
-CREATE DATABASE IF NOT EXISTS `unitywassim` 
+CREATE DATABASE IF NOT EXISTS `unitywassim`;
 USE `unitywassim`;
 
 -- phpMyAdmin SQL Dump
